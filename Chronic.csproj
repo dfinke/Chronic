@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6058D81-B26A-418B-9AC1-EBAADDE61FE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chronic</RootNamespace>
+    <AssemblyName>Chronic</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EndianPrecedence.cs" />
+    <Compile Include="Handlers\BCLDateTimeHandler.cs" />
+    <Compile Include="Handlers\ComplexHandler.cs" />
+    <Compile Include="Handlers\GRGRHandler.cs" />
+    <Compile Include="Handlers\HandlerPattern.cs" />
+    <Compile Include="Handlers\HandlerType.cs" />
+    <Compile Include="Handlers\HandlerTypePattern.cs" />
+    <Compile Include="Handlers\IHandler.cs" />
+    <Compile Include="Handlers\MultiSRHandler.cs" />
+    <Compile Include="Handlers\OdRmnHandler.cs" />
+    <Compile Include="Handlers\OdRmnSyHandler.cs" />
+    <Compile Include="Handlers\ORGRHandler.cs" />
+    <Compile Include="Handlers\ORSRHandler.cs" />
+    <Compile Include="Handlers\PSRHandler.cs" />
+    <Compile Include="Handlers\RdnRmnOdHandler.cs" />
+    <Compile Include="Handlers\RdnRmnSdHandler.cs" />
+    <Compile Include="Handlers\Registration\EndianSpecificRegistry.cs" />
+    <Compile Include="Handlers\Registration\Handle.cs" />
+    <Compile Include="Handlers\Registration\HandlerBuilder.cs" />
+    <Compile Include="Handlers\Registration\HandlerRegistry.cs" />
+    <Compile Include="Handlers\Registration\MyHandlerRegistry.cs" />
+    <Compile Include="Handlers\RepeatPattern.cs" />
+    <Compile Include="Handlers\RGRHandler.cs" />
+    <Compile Include="Handlers\RHandler.cs" />
+    <Compile Include="Handlers\RmnOdHandler.cs" />
+    <Compile Include="Handlers\RmnOdOnHandler.cs" />
+    <Compile Include="Handlers\RmnOdSyHandler.cs" />
+    <Compile Include="Handlers\RmnSdHandler.cs" />
+    <Compile Include="Handlers\RmnSdOnHandler.cs" />
+    <Compile Include="Handlers\RmnSdSyHandler.cs" />
+    <Compile Include="Handlers\RmnSyHandler.cs" />
+    <Compile Include="Handlers\SdRmnHandler.cs" />
+    <Compile Include="Handlers\SdRmnSyHandler.cs" />
+    <Compile Include="Handlers\SdSmSyHandler.cs" />
+    <Compile Include="Handlers\SmSdHandler.cs" />
+    <Compile Include="Handlers\SmSdSyHandler.cs" />
+    <Compile Include="Handlers\SmSyHandler.cs" />
+    <Compile Include="Handlers\SRPAHandler.cs" />
+    <Compile Include="Handlers\SRPHandler.cs" />
+    <Compile Include="Handlers\SyRmnOdHandler.cs" />
+    <Compile Include="Handlers\SySmSdHandler.cs" />
+    <Compile Include="Handlers\TagPattern.cs" />
+    <Compile Include="Handlers\Utils.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Numerizer.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="Span.cs" />
+    <Compile Include="System\CollectionExtensions.cs" />
+    <Compile Include="System\StringExtensions.cs" />
+    <Compile Include="System\Time.cs" />
+    <Compile Include="System\TokenCollectionExtensions.cs" />
+    <Compile Include="Tags\Grabber.cs" />
+    <Compile Include="Tags\GrabberScanner.cs" />
+    <Compile Include="Tags\ITokenScanner.cs" />
+    <Compile Include="Tags\Ordinal.cs" />
+    <Compile Include="Tags\OrdinalScanner.cs" />
+    <Compile Include="Tags\Pointer.cs" />
+    <Compile Include="Tags\PointerScanner.cs" />
+    <Compile Include="Tags\Repeaters\DayPortion.cs" />
+    <Compile Include="Tags\Repeaters\EnumRepeaterDayPortion.cs" />
+    <Compile Include="Tags\Repeaters\IllegalStateException.cs" />
+    <Compile Include="Tags\Repeaters\IntegerRepeaterDayPortion.cs" />
+    <Compile Include="Tags\Repeaters\MonthName.cs" />
+    <Compile Include="Tags\Repeaters\Repeater.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterDay.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterDayName.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterDayPortion.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterFortnight.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterHour.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterMinute.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterMonth.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterMonthName.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterScanner.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterSeason.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterSecond.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterTime.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterUnit.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterUnitName.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterWeek.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterWeekend.cs" />
+    <Compile Include="Tags\Repeaters\RepeaterYear.cs" />
+    <Compile Include="Tags\Repeaters\UnitName.cs" />
+    <Compile Include="Tags\Scalar.cs" />
+    <Compile Include="Tags\ScalarScanner.cs" />
+    <Compile Include="Tags\Separator.cs" />
+    <Compile Include="Tags\SeparatorComma.cs" />
+    <Compile Include="Tags\SeparatorScanner.cs" />
+    <Compile Include="Tags\Tag.cs" />
+    <Compile Include="Tags\TimeZone.cs" />
+    <Compile Include="Tags\TimeZoneScanner.cs" />
+    <Compile Include="Tick.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="Tokenizer.cs" />
+    <EmbeddedResource Include="Properties\Chronic.rd.xml" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
